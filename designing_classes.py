@@ -320,7 +320,7 @@ def project():
                 "Project objectives."),
             ('previous_projects', 'linked_to(designing.project)', '0.N',
                 "Previous projects with similar aims."),
-            ('requires_experiments', 'linked_to(designing.numerical_experiment)', '0.N',
+            ('required_experiments', 'linked_to(designing.numerical_experiment)', '0.N',
                 "Experiments required to deliver project."),
             ('governed_experiments', 'linked_to(designing.numerical_experiment)', '0.N',
                 "Experiments governed by this project."),
