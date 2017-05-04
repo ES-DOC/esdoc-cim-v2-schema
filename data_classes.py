@@ -68,7 +68,7 @@ modifications requirted to use it in the relevant component.
         'properties': [
             ('original_data', 'data.dataset', '1.1',
                 'The source dataset, prior to any modifications'),
-            ('modifications_applied', 'str', '1.1',
+            ('modifications_applied', 'str', '0.1',
                 'Describe modifications (if any) applied to the dataset prior to use. E.g. spatial interpolation, temporal averaging, etc.'),
         ]
     }
