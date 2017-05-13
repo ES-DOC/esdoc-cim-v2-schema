@@ -33,6 +33,7 @@ def dataset():
         'base': None,
         'is_abstract': False,
         'is_document': True,
+        'pstr': ('{}', ('name',)),
         'properties': [
             ('citations', 'shared.citation', '0.N',
                 "Set of pertinent citations."),
