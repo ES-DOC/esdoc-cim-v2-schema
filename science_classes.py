@@ -27,7 +27,7 @@ def model():
                 "Properties specific to the modelling activity in question, e.g. radiative forcing agents for CMIP6."),
             ('realms', 'linked_to(science.realm)', '0.N',
                 "The scientific realms which this model simulates internally, i.e. those which are not linked together using a coupler."),
-            ('realm_coupling', 'science.realm_coupling)', '0.N',
+            ('realm_coupling', 'science.realm_coupling', '0.N',
                 "Description of a coupling between realms"),
 
             # TODO: review these attributes once software package is peer-reviewed
