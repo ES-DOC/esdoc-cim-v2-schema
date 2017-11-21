@@ -23,7 +23,7 @@ def model():
                 "Generic type for this model."),
             ('key_properties', 'science.topic', '0.1',
                 "Model default key properties (may be over-ridden in coupled component and realm properties)."),
-            ('activity_properties', 'science.topic', '0.1',
+            ('activity_properties', 'science.topic', '0.N',
                 "Properties specific to the modelling activity in question, e.g. radiative forcing agents for CMIP6."),
             ('realms', 'linked_to(science.realm)', '0.N',
                 "The scientific realms which this model simulates internally, i.e. those which are not linked together using a coupler."),
