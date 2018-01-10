@@ -85,8 +85,8 @@ def realm_coupling():
                  'The model realm receiving the variable (e.g. atmosphere)'),
             ('time_frequency', 'str', '1.1',
                  'The time frequency of the coupling (e.g. 1 hour)'),
-            ('coupling_details' 'str', '0.1',
-                 'Description of the coupling algorithm, and any other information (e.g. binlinear interpolation'),
+            ('coupling_details', 'str', '0.1',
+                 'Description of the coupling algorithm, and any other information (e.g. binlinear interpolation')
         ]
     }
 

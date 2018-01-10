@@ -64,10 +64,9 @@ def axis_member():
             ('index', 'int', '1.1',
                 "The ensemble member index."),
             ('value', 'float', '0.1',
-                "If parameter varied, value thereof for this member.")
+                "If parameter varied, value thereof for this member."),
             ('target_requirement', 'linked_to(designing.numerical_requirement)', '0.1',
                 "URI of the target numerical requirement, if any.")
-            
         ]
     }
 
