@@ -5,7 +5,7 @@ Dear ES-DOC community member,
 Thank you for taking the time to consider making a contribution to the
 CIM.
 
-This set of guidelines provides a brief overview of the practices and
+This set of guidelines provides a overview of the practices and
 procedures that should be used in fixing, updating, or adding to the
 CIM.
 
@@ -13,11 +13,11 @@ The ES-DOC community takes great pride in respectful and collegial
 discourse. Any disrespectful or otherwise derogatory communication
 will not be tolerated.
 
-## General Guidelines
+### General Guidelines
 
-* All changes to the CIM from now should be done as git pull requests,
-  since each pull request comes with documentation as to why the
-  change is necessary.
+* All changes to the CIM should be done as git pull requests, since
+  each pull request comes with documentation as to why the change is
+  necessary.
 
 * Changes to the CIM should be classified as trivial, minor or major
   as follows
@@ -43,13 +43,13 @@ will not be tolerated.
   accepted by default.
 
 
-## Versioning strategy for the CIM
+### Version strategy for the CIM
 
-Use a three-level **major.minor.trivial** numeric versioning scheme,
+Use a three-level **major.minor.trivial** numeric version scheme,
 e.g 2.11.13. Major, minor and trivial changes to the CIM, as defined
-above, require an appropriate increment to repective version field.
+above, require an increment to appropriate field of the version.
 
-## History
+### History
 
 These guidelines were originally conceived by the ES-DOC PIs on 30th
 November 2016.
