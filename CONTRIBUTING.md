@@ -13,7 +13,7 @@ The ES-DOC community takes great pride in respectful and collegial
 discourse. Any disrespectful or otherwise derogatory communication
 will not be tolerated.
 
-### General Guidelines
+## General Guidelines
 
 * All changes to the CIM should be done as git pull requests, since
   each pull request comes with documentation as to why the change is
@@ -43,13 +43,13 @@ will not be tolerated.
   accepted by default.
 
 
-### Version strategy for the CIM
+## Version strategy for the CIM
 
 Use a three-level **major.minor.trivial** numeric version scheme,
 e.g 2.11.13. Major, minor and trivial changes to the CIM, as defined
 above, require an increment to appropriate field of the version.
 
-### History
+## History
 
 These guidelines were originally conceived by the ES-DOC PIs on 30th
 November 2016.
