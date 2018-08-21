@@ -23,12 +23,12 @@ will not be tolerated.
   as follows
 
   * **Major**: A change to any part of the schema layout, base metadata or
-    constraint & reference structure
+    constraint & reference structure.
 
   * **Minor**: Adding a new document class or a new extension package.
 
   * **Trivial**: A change to any other properties (including adding new
-    classes/enums that are not enumerations).
+    classes ao enumerations).
 
 * For trivial and minor changes, the ES-DOC development team will have
   the authority to review and sign off. This can be done using slack
