@@ -28,7 +28,7 @@ will not be tolerated.
   * **Minor**: Adding a new document class or a new extension package.
 
   * **Trivial**: A change to any other properties (including adding new
-    classes ao enumerations).
+    classes or enumerations).
 
 * For trivial and minor changes, the ES-DOC development team will have
   the authority to review and sign off. This can be done using slack
