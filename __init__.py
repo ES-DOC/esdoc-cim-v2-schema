@@ -27,7 +27,7 @@ from . import time as time_classes
 NAME = 'cim'
 
 # Ontology version.
-VERSION = '2'
+VERSION = '2.0.37'
 
 # Ontology doc string.
 DOC = 'Metafor CIM ontology schema - version 2'
