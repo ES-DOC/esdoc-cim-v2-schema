@@ -39,8 +39,12 @@ def citation():
         'properties': [
             ('abstract', 'str', '0.1',
                 "Abstract providing high level reference overview."),
+            ('authors', 'cs-str', '0.1',
+                "The Authors of the work, given as comma separated string."),
+            ('bibtex', 'str', '0.1',
+                "A BibTeX reference for the work."),
             ('citation_detail', 'str', '0.1',
-                "Complete citation string as would appear in a bibliography."),
+                "A complete citation string as would appear in a bibliography."),
             ('collective_title', 'str', '0.1',
                 "Citation collective title, i.e. with all authors declared."),
             ('context', 'str', '0.1',
@@ -48,9 +52,11 @@ def citation():
             ('doi', 'str', '0.1',
                 "Digital Object Identifier, if it exists."),
             ('title', 'str', '0.1',
-                "Citation short title."),
+                "The title of the work."),
             ('type', 'str', '0.1',
                 "Citation type."),
+            ('year', 'int', '0.1',
+                "Year of publication."),            
             ('url', 'shared.online_resource', '0.1',
                 "Location of electronic version.")
         ]
