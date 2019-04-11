@@ -26,7 +26,7 @@ from . import time as time_classes
 NAME = 'cim'
 
 # Ontology version.
-VERSION = '2.0.39'
+VERSION = '2.0.40'
 
 # Ontology doc string.
 DOC = 'ESDOC CIM ontology schema - version 2'
