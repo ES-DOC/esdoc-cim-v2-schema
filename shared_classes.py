@@ -39,8 +39,8 @@ def citation():
         'properties': [
             ('abstract', 'str', '0.1',
                 "Abstract providing high level reference overview."),
-            ('authors', 'cs-str', '0.1',
-                "The Authors of the work, given as comma separated string."),
+            ('authors', 'str', '0.N',
+                "The Authors of the work."),
             ('bibtex', 'str', '0.1',
                 "A BibTeX reference for the work."),
             ('citation_detail', 'str', '0.1',
@@ -56,7 +56,7 @@ def citation():
             ('type', 'str', '0.1',
                 "Citation type."),
             ('year', 'int', '0.1',
-                "Year of publication."),            
+                "Year of publication."),
             ('url', 'shared.online_resource', '0.1',
                 "Location of electronic version.")
         ]
@@ -130,7 +130,7 @@ def online_resource():
 
 def party():
     """Implements minimal material for an ISO19115-1 (2014) compliant party.
-    For our purposes this is a much better animal than the previous responsibleParty 
+    For our purposes this is a much better animal than the previous responsibleParty
     which munged roles together with people. Note we have collapsed CI_Contact,
     CI_Individual and CI_Organisation as well as the abstract CI_Party.
 
