@@ -129,20 +129,8 @@ def simulation():
                 'The calendar used in the simulation'),
 
             # Ensemble member attributes
-            ('realization_index', 'int', '0.1',
-                'realization number, e.g. 5'),
-            ('initialization_index', 'int', '0.1',
-                'Index variant of initialization method, e.g. 1'),
-            ('physics_index', 'int', '0.1',
-                'index for model physics, e.g. 3'),
-            ('forcing_index', 'int', '0.1',
-                'index for variant of forcing, e.g. 2'),
             ('variant_info', 'str', '0.1',
                 'description of run variant differences, e.g. forcing: black carbon aerosol only'),
-
-            # Further Info URL
-            ('further_info_url', 'str', '0.1',
-                'On-line location of documentation'),
 
             # Extra attributes
             ('extra_attributes','shared.extra_attribute', '0.N',
