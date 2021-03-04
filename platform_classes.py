@@ -54,7 +54,7 @@ def compute_pool():
 
 
 def interconnect():
-    """ The interconnect used within a machine to joining nodes together"""
+    """ The interconnect used within a machine to join nodes together"""
     return {
         'type': 'class',
         'base': None,
@@ -284,5 +284,4 @@ def storage_systems():
             ("Tape - Other", "Other tape based system")
         ]
     }
-
 
