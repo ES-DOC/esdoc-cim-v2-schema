@@ -208,7 +208,7 @@ def performance_detail():
             ('coupling_cost', 'float', '0.1',
              'Coupling cost measures the overhead caused by coupling. This can include the cost of the coupling algorithm itself (which may involve grid interpolation and computation of transfer coefficients for conservative coupling) as well as load imbalance. It is the normalized difference between the time-processor integral for the whole model versus the sum of individual concurrent components.'),
             ('memory_bloat', 'float', '0.1',
-             'Memory bloat is the ratio of the actual memory size to the ideal memory size (the size of the complete model state, which in theory is all you need to hold in memory)Mi, defined below.'),
+             'Memory bloat is the ratio of the actual memory size, defined as M − NP × X where M is the measured runtime memory usage and X the size of the executable files, to the ideal memory size Mi, the size of the complete model state, which in theory is all you need to hold in memory.'),
             ('data_output_cost', 'float', '0.1',
              'Data output cost is the cost of performing I/O, and is the ratio of CHSY with and without I/O.'),
             ('data_intensity', 'float', '0.1',
