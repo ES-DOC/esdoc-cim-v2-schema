@@ -247,7 +247,7 @@ def algorithm():
 
 
 def quality_report():
-    """"""
+    """ """
     return {
         "type": "class",
         "base": None,
