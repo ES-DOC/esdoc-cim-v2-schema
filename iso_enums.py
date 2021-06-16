@@ -14,7 +14,8 @@ def ds_initiative_typecode():
     Formally a DS_InitiativeTypeCode, from ISO19115_2011.
 
     """
-    # Do not modify or extend these definitions unless using a later version of ISO19115
+    # Do not modify or extend these definitions unless using a later version
+    # of ISO19115
     return {
         "type": "enum",
         "is_open": False,
@@ -87,7 +88,8 @@ def md_progress_code():
             ("onGoing", "data is continually being updated"),
             (
                 "planned",
-                "fixed date has been established upon or by which the data will be created or updated",
+                "fixed date has been established upon or by which the data "
+                "will be created or updated",
             ),
             ("required", "updated"),
             (
@@ -106,7 +108,8 @@ def dq_evaluation_result_type():
         "members": [
             (
                 "plot",
-                "Diagnostic plot, use mime-type to identify what kind of image format is used",
+                "Diagnostic plot, use mime-type to identify what kind of "
+                "image format is used",
             ),
             (
                 "document",
@@ -114,7 +117,8 @@ def dq_evaluation_result_type():
             ),
             (
                 "dataset",
-                "Expect a binary target, accessible via a landing page or directly",
+                "Expect a binary target, accessible via a landing page or "
+                "directly",
             ),
         ],
     }

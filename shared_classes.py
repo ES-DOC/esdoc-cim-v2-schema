@@ -50,7 +50,8 @@ def citation():
                 "citation_detail",
                 "str",
                 "0.1",
-                "A complete citation string as would appear in a bibliography.",
+                "A complete citation string as would appear in a "
+                "bibliography.",
             ),
             (
                 "collective_title",
@@ -111,12 +112,14 @@ def nil_reason():
             ("nil:inapplicable", "There is no value"),
             (
                 "nil:missing",
-                "The correct value is not available. Furthermore, a correct value may not exist",
+                "The correct value is not available. Furthermore, a correct "
+                "value may not exist",
             ),
             ("nil:template", "The value will be available later"),
             (
                 "nil:unknown",
-                "The correct value is not known at this time. However, a correct value probably exists",
+                "The correct value is not known at this time. However, a "
+                "correct value probably exists",
             ),
             ("nil:withheld", "The value is not divulged"),
         ],
@@ -243,7 +246,8 @@ def quality_status():
             ("under_review", "Document is being reviewed"),
             (
                 "reviewed",
-                "Document has been formally reviewed and assessed as complete and accurate",
+                "Document has been formally reviewed and assessed as "
+                "complete and accurate",
             ),
         ],
     }
@@ -309,7 +313,8 @@ def role_code():
             ("owner", "Party with legal ownership of the resource"),
             (
                 "processor",
-                "Party who has taken part in the workflow that resulted in this resource",
+                "Party who has taken part in the workflow that resulted in "
+                "this resource",
             ),
             ("distributor", "Party who distributes the resource"),
             (
@@ -319,16 +324,19 @@ def role_code():
             ("user", "Party who uses the resource"),
             (
                 "point of contact",
-                "Party who can be contacted for acquiring knowledge about or acquisition of the resource",
+                "Party who can be contacted for acquiring knowledge about or "
+                "acquisition of the resource",
             ),
             ("resource provider", "Party that supplies the resource"),
             (
                 "custodian",
-                "Party that accepts accountability and responsibility for the source resource",
+                "Party that accepts accountability and responsibility for the "
+                "source resource",
             ),
             (
                 "metadata_reviewer",
-                "Party who carried out an independent review of (this) documentation",
+                "Party who carried out an independent review of (this) "
+                "documentation",
             ),
             ("metadata_author", "Party who created (this) documentation"),
         ],

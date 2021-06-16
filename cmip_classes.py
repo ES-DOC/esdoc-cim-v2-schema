@@ -15,7 +15,8 @@ def cmip_dataset():
         "is_document": True,
         "pstr": ("{}", ("name",)),
         "properties": [
-            # FIXME: Should we specialise the availability online reosurce rather than do this?
+            # FIXME: Should we specialise the availability online reosurce
+            # rather than do this?
             (
                 "drs_location",
                 "drs.drs_publication_dataset",
@@ -58,7 +59,8 @@ def cmip_simulation():
         ),
         "properties": [
             # Ensemble member attributes
-            # FIXME: There is a DRS class for this collection of attributes, join or not?
+            # FIXME: There is a DRS class for this collection of attributes,
+            # join or not?
             ("realization_index", "int", "1.1", "realization number, e.g. 5"),
             (
                 "initialization_index",
@@ -77,7 +79,8 @@ def cmip_simulation():
                 "variant_info",
                 "str",
                 "0.1",
-                "description of run variant differences, e.g. forcing: black carbon aerosol only",
+                "description of run variant differences, e.g. forcing: black "
+                "carbon aerosol only",
             ),
         ],
     }

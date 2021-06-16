@@ -36,7 +36,8 @@ def doc_meta_info():
                 "drs_keys",
                 "str",
                 "0.N",
-                "DRS related keys to support correlation of documents with datasets.",
+                "DRS related keys to support correlation of documents with "
+                "datasets.",
             ),
             (
                 "drs_path",
@@ -48,7 +49,8 @@ def doc_meta_info():
                 "external_ids",
                 "str",
                 "0.N",
-                "Set of identifiers used to reference the document by external parties.",
+                "Set of identifiers used to reference the document by "
+                "external parties.",
             ),
             (
                 "id",
@@ -123,7 +125,8 @@ def doc_reference():
                 "relationship",
                 "str",
                 "0.1",
-                "Relationship of the object target as seen from the subject resource.",
+                "Relationship of the object target as seen from the subject "
+                "resource.",
             ),
             (
                 "further_info",

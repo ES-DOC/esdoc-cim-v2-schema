@@ -72,7 +72,8 @@ def activity():
                 "rationale",
                 "str",
                 "0.1",
-                "Explanation of why this activity was carried out and/or what it was intended to achieve.",
+                "Explanation of why this activity was carried out and/or what "
+                "it was intended to achieve.",
             ),
         ],
     }
@@ -101,7 +102,8 @@ def axis_member():
                 "extra_detail",
                 "str",
                 "0.1",
-                "If necessary: further information about ensemble member conformance.",
+                "If necessary: further information about ensemble member "
+                "conformance.",
             ),
             ("index", "int", "1.1", "The ensemble member index."),
             (
@@ -114,7 +116,8 @@ def axis_member():
                 "conformance",
                 "linked_to(activity.conformance)",
                 "0.1",
-                "Conformance document for the target requirement that defines this member, if any.",
+                "Conformance document for the target requirement that defines "
+                "this member, if any.",
             ),
             (
                 "axis",
@@ -148,11 +151,13 @@ def conformance():
                 "datasets",
                 "linked_to(data.dataset)",
                 "0.N",
-                "The datasets (including any modifications made to them) used for conforming to the target requirement.",
+                "The datasets (including any modifications made to them) used "
+                "for conforming to the target requirement.",
             ),
             # FIXME:
-            # Should this be a URI of the target numerical requirement, or a linked_to reference?
-            # Either the docstring, or the target type is wrong.
+            # Should this be a URI of the target numerical requirement, or
+            # a linked_to reference? Either the docstring, or the target
+            # type is wrong.
             (
                 "target_requirement",
                 "linked_to(designing.numerical_requirement)",
@@ -185,11 +190,13 @@ def conformance_type():
             ("Conformed", "Simulation (or ensemble) conformed to requirement"),
             (
                 "Partially Conformed",
-                "Simulation (or ensemble) partially conformed to requirement - details in description",
+                "Simulation (or ensemble) partially conformed to requirement "
+                "- details in description",
             ),
             (
                 "Not Conformed",
-                "Simulation (or ensemble) was unable to conform to requirement",
+                "Simulation (or ensemble) was unable to conform to "
+                "requirement",
             ),
             ("Not Applicable", "Requirement is not relevant"),
         ],
@@ -213,7 +220,8 @@ def ensemble():
                 "common_conformances",
                 "linked_to(activity.conformance)",
                 "0.N",
-                "Conformance documents for requirements common across ensemble.",
+                "Conformance documents for requirements common across "
+                "ensemble.",
             ),
             (
                 "representative_performance",
@@ -225,7 +233,8 @@ def ensemble():
                 "documentation",
                 "shared.online_resource",
                 "0.N",
-                "Links to web-pages and other ensemble specific documentation (including workflow descriptions).",
+                "Links to web-pages and other ensemble specific documentation "
+                "(including workflow descriptions).",
             ),
             (
                 "ensemble_axes",
@@ -237,19 +246,22 @@ def ensemble():
                 "uber_ensembles",
                 "linked_to(activity.uber_ensemble)",
                 "0.N",
-                "Link to one or more over-arching ensembles that might includes this one.",
+                "Link to one or more over-arching ensembles that might "
+                "includes this one.",
             ),
             (
                 "experiments",
                 "linked_to(designing.numerical_experiment)",
                 "1.N",
-                "Experiments with which the ensemble is associated (may differ from constituent simulations).",
+                "Experiments with which the ensemble is associated (may "
+                "differ from constituent simulations).",
             ),
             (
                 "members",
                 "linked_to(activity.simulation)",
                 "0.N",
-                "Simulations within ensemble (should only be zero while ensemble is being defined)",
+                "Simulations within ensemble (should only be zero while "
+                "ensemble is being defined)",
             ),
         ],
         "constraints": [
@@ -275,19 +287,22 @@ def ensemble_axis():
                 "extra_detail",
                 "str",
                 "0.1",
-                "Any extra detail required to describe how this ensemble axis was delivered.",
+                "Any extra detail required to describe how this ensemble axis "
+                "was delivered.",
             ),
             (
                 "members",
                 "activity.axis_member",
                 "0.N",
-                "Individual member descriptions along axis. 0.N cardinality is only acceptable during design",
+                "Individual member descriptions along axis. 0.N cardinality "
+                "is only acceptable during design",
             ),
             (
                 "short_identifier",
                 "str",
                 "1.1",
-                "e.g. 'r', 'i', 'p' or 'f' to conform with simulation ensemble variant identifiers.",
+                "e.g. 'r', 'i', 'p' or 'f' to conform with simulation "
+                "ensemble variant identifiers.",
             ),
             (
                 "target_requirement",
@@ -311,19 +326,22 @@ def child_simulation():
                 "branch_method",
                 "str",
                 "0.1",
-                "Description of how the simulation was branched from a parent simulation, e.g. 'standard', 'none provided'.",
+                "Description of how the simulation was branched from a parent "
+                "simulation, e.g. 'standard', 'none provided'.",
             ),
             (
                 "branch_time_in_child",
                 "time.date_time",
                 "0.1",
-                "The time at which the present simulation started in the child calendar.",
+                "The time at which the present simulation started in the "
+                "child calendar.",
             ),
             (
                 "branch_time_in_parent",
                 "time.date_time",
                 "0.1",
-                "The time in parent simulation calendar at which this simulation was branched.",
+                "The time in parent simulation calendar at which this "
+                "simulation was branched.",
             ),
             (
                 "parent",
@@ -357,13 +375,17 @@ def simulation():
                 "ran_for_experiments",
                 "linked_to(designing.numerical_experiment)",
                 "1.N",
-                "One or more experiments with which the simulation is associated",
+                "One or more experiments with which the simulation is "
+                "associated",
             ),
             (
                 "sub_experiment",
                 "linked_to(designing.numerical_experiment)",
                 "0.1",
-                "For start-date ensembles, this will indicate the beginning year; for offline models driven by output from another model, this will provide the source_id and variant_label for the 'driving' model.",
+                "For start-date ensembles, this will indicate the beginning "
+                "year; for offline models driven by output from another "
+                "model, this will provide the source_id and variant_label "
+                "for the 'driving' model.",
             ),
             (
                 "used",
@@ -375,7 +397,8 @@ def simulation():
                 "primary_ensemble",
                 "linked_to(activity.ensemble)",
                 "0.1",
-                "Primary Ensemble (ensemble for which this simulation was first run).",
+                "Primary Ensemble (ensemble for which this simulation was "
+                "first run).",
             ),
             (
                 "institution",
@@ -387,7 +410,8 @@ def simulation():
                 "parent_of",
                 "linked_to(activity.child_simulation)",
                 "0.N",
-                "If appropriate, links to simulations which branched from this one",
+                "If appropriate, links to simulations which branched from "
+                "this one",
             ),
             (
                 "produced",
@@ -417,23 +441,25 @@ def simulation():
                 "ensemble_id",
                 "activity.axis_member",
                 "0.N",
-                """ Identification within ensemble axes via axis member.
-                 (Multiple axis members within a simulation cannot share the same ensemble_axis.)
-                 (There must be an axis_member instance for each ensemble axis in a parent ensemble.)
-                 """,
+                "Identification within ensemble axes via axis member. "
+                "(Multiple axis members within a simulation cannot share the "
+                "same ensemble_axis.) (There must be an axis_member instance "
+                "for each ensemble axis in a parent ensemble.)",
             ),
             # Time
             (
                 "start_time",
                 "time.date_time",
                 "0.1",
-                "The start date-time of the simulation. e.g. 2012-04-01 00:00:00",
+                "The start date-time of the simulation. e.g. "
+                "2012-04-01 00:00:00",
             ),
             (
                 "end_time",
                 "time.date_time",
                 "0.1",
-                "The start date-time of the simulation. e.g. 2087-11-30 12:00:00",
+                "The start date-time of the simulation. e.g. "
+                "2087-11-30 12:00:00",
             ),
             (
                 "calendar",

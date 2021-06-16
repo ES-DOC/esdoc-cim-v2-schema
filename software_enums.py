@@ -19,7 +19,8 @@ def coupling_framework():
             ("ESMF", "Vanilla Earth System Modelling Framework"),
             (
                 "NUOPC",
-                "National Unified Operational Prediction Capability variant of ESMF",
+                "National Unified Operational Prediction Capability variant "
+                "of ESMF",
             ),
             ("Bespoke", "Customised coupler developed for this model"),
             ("Unknown", "It is not known what/if-a coupler is used"),

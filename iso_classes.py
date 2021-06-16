@@ -39,13 +39,15 @@ def lineage():
                 "statement",
                 "str",
                 "0.1",
-                "General explanation of the level of knowledge or lack thereof about the lineage",
+                "General explanation of the level of knowledge or lack "
+                "thereof about the lineage",
             ),
             (
                 "process_step",
                 "iso.process_step",
                 "0.N",
-                "How the resource was developed or set of events associated with production.",
+                "How the resource was developed or set of events associated "
+                "with production.",
             ),
             (
                 "source",
@@ -73,7 +75,8 @@ def process_step():
                 "description",
                 "str",
                 "1.1",
-                "General description of the events in the development of the resource.",
+                "General description of the events in the development of the "
+                "resource.",
             ),
             (
                 "rationale",
@@ -91,9 +94,9 @@ def process_step():
                 "processor",
                 "shared.responsibility",
                 "0.1",
-                """Individual or organisation responsible for the process step.
-                Use roleCode='processor'. Contact information is not necessary.
-                """,
+                "Individual or organisation responsible for the process step. "
+                "Use roleCode='processor'. Contact information is not "
+                "necessary.",
             ),
             (
                 "reference",
@@ -153,7 +156,8 @@ def processing():
                 "identifier",
                 "str",
                 "0.1",
-                "Identifier (strictly, a code which can be used in an MD_Identifier",
+                "Identifier (strictly, a code which can be used in an "
+                "MD_Identifier",
             ),
             (
                 "softwareReference",
@@ -177,7 +181,8 @@ def processing():
                 "runTimeParameters",
                 "str",
                 "0.1",
-                "parameters to control the processing operations, entered at run time",
+                "parameters to control the processing operations, entered at "
+                "run time",
             ),
             (
                 "algorithm",
@@ -208,7 +213,8 @@ def process_step_report():
                 "description",
                 "str",
                 "1.1",
-                "Summary textual description of what occurred during the process step",
+                "Summary textual description of what occurred during the "
+                "process step",
             ),
             (
                 "link",
@@ -347,7 +353,8 @@ def quality_evaluation_result():
                 "passed",
                 "bool",
                 "0.1",
-                "Success or failure of the evaluation, if boolean concept is appropriate",
+                "Success or failure of the evaluation, if boolean concept is "
+                "appropriate",
             ),
             (
                 "results",

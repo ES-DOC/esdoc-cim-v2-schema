@@ -171,7 +171,8 @@ def initialisation_requirement():
                 "branch_time_in_initialisation_source",
                 "time.date_time",
                 "0.1",
-                "If appropriate,  the time in the initialisation_source (whether observed or simulated).",
+                "If appropriate,  the time in the initialisation_source "
+                "(whether observed or simulated).",
             ),
             (
                 "initialise_from_data",
@@ -183,7 +184,8 @@ def initialisation_requirement():
                 "initialise_from_experiment",
                 "linked_to(designing.numerical_experiment)",
                 "0.1",
-                "This experiment should be initialised from the output of this experiment.",
+                "This experiment should be initialised from the output of "
+                "this experiment.",
             ),
         ],
         "constraints": [
@@ -232,7 +234,8 @@ def numerical_experiment():
                 "related_experiments",
                 "linked_to(designing.numerical_experiment)",
                 "0.N",
-                "Other experiments which have defined relationships to this one.",
+                "Other experiments which have defined relationships to this "
+                "one.",
             ),
             (
                 "governing_mips",
@@ -256,14 +259,17 @@ def numerical_experiment():
                 "requirements",
                 "linked_to(designing.numerical_requirement)",
                 "0.N",
-                "Additional requirements that conformant simulations need to satisfy.",
+                "Additional requirements that conformant simulations need to "
+                "satisfy.",
             ),
-            # FIXME: if objectives become standalone, the strings should become linked_to(designing.objective).
+            # FIXME: if objectives become standalone, the strings should
+            # become linked_to(designing.objective).
             (
                 "related_objectives",
                 "str",
                 "0.N",
-                "Set of objective identifiers (which should appear within the related experiments)",
+                "Set of objective identifiers (which should appear within the "
+                "related experiments)",
             ),
         ],
         "constraints": [
@@ -281,7 +287,8 @@ def experimental_relationships():
         "members": [
             (
                 "is_constrained_by",
-                "The experiment that provides constraint(s) for the target experiment (e.g SST forcing).",
+                "The experiment that provides constraint(s) for the target "
+                "experiment (e.g SST forcing).",
             ),
             (
                 "is_constrainer_of",
@@ -289,7 +296,8 @@ def experimental_relationships():
             ),
             (
                 "is_perturbation_from",
-                "The experiment that provides a control for the target experiment.",
+                "The experiment that provides a control for the target "
+                "experiment.",
             ),
             (
                 "is_control_for",
@@ -305,7 +313,8 @@ def experimental_relationships():
             ),
             (
                 "is_sibling_of",
-                "Part of a family (e.g. experiments where solar forcing is either increased or reduced).",
+                "Part of a family (e.g. experiments where solar forcing is "
+                "either increased or reduced).",
             ),
         ],
     }
@@ -339,19 +348,22 @@ def numerical_requirement():
                 "is_conformance_requested",
                 "bool",
                 "1.1",
-                "Indicator as to whether ensemble documentation should include conformance information for this requirement.",
+                "Indicator as to whether ensemble documentation should "
+                "include conformance information for this requirement.",
             ),
             (
                 "is_conformance_info_required",
                 "bool",
                 "1.1",
-                "Indicator as to whether an institute is expected to provide informationas to how it confirmed.",
+                "Indicator as to whether an institute is expected to provide "
+                "informationas to how it confirmed.",
             ),
             (
                 "scope",
                 "designing.numerical_requirement_scope",
                 "0.1",
-                "Scope allows us to categorise a requirement in terms of how widely it is shared.",
+                "Scope allows us to categorise a requirement in terms of how "
+                "widely it is shared.",
             ),
         ],
         "constraints": [("cardinality", "duration", "0.0")],
@@ -367,19 +379,23 @@ def numerical_requirement_scope():
         "members": [
             (
                 "mip-era",
-                "MIP era wide e.g. 'concentration of pre-industrial CO2' & 'Impose AMIP SSTs'",
+                "MIP era wide e.g. 'concentration of pre-industrial CO2' & "
+                "'Impose AMIP SSTs'",
             ),
             (
                 "mip-group",
-                "Shared across a group of MIPs e.g. aerosol forcing in GeoMIP and AerChemMIP.",
+                "Shared across a group of MIPs e.g. aerosol forcing in GeoMIP "
+                "and AerChemMIP.",
             ),
             (
                 "mip",
-                "Shared within a single MIP e.g. spin-up protocol for land surface experiments in LUMIP.",
+                "Shared within a single MIP e.g. spin-up protocol for land "
+                "surface experiments in LUMIP.",
             ),
             (
                 "experiment",
-                "Applies to a single experiment e.g. CFMIP 'zonally uniform SST plus 4K'",
+                "Applies to a single experiment e.g. CFMIP 'zonally uniform "
+                "SST plus 4K'",
             ),
         ],
     }
@@ -468,7 +484,8 @@ def project():
                 "sub_projects",
                 "linked_to(designing.project)",
                 "0.N",
-                "Activities within the project with their own name and aim(s).",
+                "Activities within the project with their own name and "
+                "aim(s).",
             ),
         ],
         "constraints": [("cardinality", "description", "1.1")],
@@ -504,7 +521,8 @@ def simulation_plan():
                 "will_support_experiments",
                 "linked_to(designing.numerical_experiment)",
                 "1.N",
-                "An experiment with which the planned simulation will be associated.",
+                "An experiment with which the planned simulation will be "
+                "associated.",
             ),
         ],
         "constraints": [("cardinality", "duration", "1.1")],
@@ -553,7 +571,8 @@ def temporal_constraint():
                 "start_flexibility",
                 "time.time_period",
                 "0.1",
-                "Amount of time before required start date that it is permissible to begin integration.",
+                "Amount of time before required start date that it is "
+                "permissible to begin integration.",
             ),
         ],
         "constraints": [("cardinality", "additional_requirements", "0.0")],

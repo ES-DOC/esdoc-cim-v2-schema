@@ -61,27 +61,34 @@ def calendar_types():
             ),
             (
                 "standard",
-                "Synonym for gregorian: Mixed Gregorian/Julian calendar as defined by Udunits",
+                "Synonym for gregorian: Mixed Gregorian/Julian calendar as "
+                "defined by Udunits",
             ),
             (
                 "proleptic_gregorian",
-                "A Gregorian calendar extended to dates before 1582-10-15. That is, a year is a leap year if either (i) it is divisible by 4 but not by 100 or (ii) it is divisible by 400.",
+                "A Gregorian calendar extended to dates before 1582-10-15. "
+                "That is, a year is a leap year if either (i) it is divisible "
+                "by 4 but not by 100 or (ii) it is divisible by 400.",
             ),
             (
                 "noleap",
-                "Gregorian calendar without leap years, i.e., all years are 365 days long.",
+                "Gregorian calendar without leap years, i.e., all years are "
+                "365 days long.",
             ),
             (
                 "365_day",
-                "Synonym for noleap:Gregorian calendar without leap years, i.e., all years are 365 days long.",
+                "Synonym for noleap:Gregorian calendar without leap years, "
+                "i.e., all years are 365 days long.",
             ),
             (
                 "all_leap",
-                "Gregorian calendar with every year being a leap year, i.e., all years are 366 days long.",
+                "Gregorian calendar with every year being a leap year, i.e., "
+                "all years are 366 days long.",
             ),
             (
                 "366_day",
-                "Synonym for all_leap:Gregorian calendar with every year being a leap year, i.e., all years are 366 days long.",
+                "Synonym for all_leap:Gregorian calendar with every year "
+                "being a leap year, i.e., all years are 366 days long.",
             ),
             ("360_day", "All years are 360 days divided into 30 day months."),
             ("julian", "Julian Calendar"),
@@ -114,7 +121,8 @@ def date_time():
                 "value",
                 "str",
                 "1.1",
-                "Date or time - some of (from left to right): yyyy-mm-dd:hh:mm:ss.",
+                "Date or time - some of (from left to right): "
+                "yyyy-mm-dd:hh:mm:ss.",
             ),
         ],
     }

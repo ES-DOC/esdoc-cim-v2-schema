@@ -31,7 +31,8 @@ def drs_atomic_dataset():
                 "mip_table",
                 "str",
                 "1.1",
-                "The MIP table, together with the variable defines the physical quantity.",
+                "The MIP table, together with the variable defines the "
+                "physical quantity.",
             ),
             ("realm", "drs.drs_realms", "0.1", "Modelling realm."),
             (
@@ -44,13 +45,15 @@ def drs_atomic_dataset():
                 "variable_name",
                 "str",
                 "1.1",
-                "Identifies the physical quantity (when used in conjunction with the MIP table).",
+                "Identifies the physical quantity (when used in conjunction "
+                "with the MIP table).",
             ),
             (
                 "version_number",
                 "int",
                 "0.1",
-                "Uniquely identifies a particular version of a publication level dataset.",
+                "Uniquely identifies a particular version of a publication "
+                "level dataset.",
             ),
         ],
     }
@@ -74,19 +77,22 @@ def drs_ensemble_identifier():
                 "initialisation_method_number",
                 "int",
                 "1.1",
-                "Identifies which method of initialisation was used, if multiple methods used.",
+                "Identifies which method of initialisation was used, if "
+                "multiple methods used.",
             ),
             (
                 "perturbation_number",
                 "int",
                 "1.1",
-                "Identifies different members of a perturbed physics ensemble.",
+                "Identifies different members of a perturbed physics "
+                "ensemble.",
             ),
             (
                 "realisation_number",
                 "int",
                 "1.1",
-                "Standard ensemble axis realisation number (usually an initial condition ensemble).",
+                "Standard ensemble axis realisation number (usually an "
+                "initial condition ensemble).",
             ),
         ],
     }
@@ -145,7 +151,8 @@ def drs_geographical_indicator():
                 "bounding_box",
                 "str",
                 "0.1",
-                "DRS bounding box of the form 'latJHJJHHlonMZMMZZ' where H, HH, Z, ZZ are from {NS} {EW} respectively.",
+                "DRS bounding box of the form 'latJHJJHHlonMZMMZZ' where H, "
+                "HH, Z, ZZ are from {NS} {EW} respectively.",
             ),
             (
                 "operator",
@@ -157,7 +164,8 @@ def drs_geographical_indicator():
                 "spatial_domain",
                 "str",
                 "0.1",
-                "Geographical indicator (currently only 'global' is acceptable).",
+                "Geographical indicator (currently only 'global' is "
+                "acceptable).",
             ),
         ],
     }
@@ -238,7 +246,8 @@ def drs_simulation_identifier():
                 "run_variant_id",
                 "drs.drs_ensemble_identifier",
                 "1.1",
-                "Also known as ensemble_identifier, unambiguously identifiers ensemble realisation information.",
+                "Also known as ensemble_identifier, unambiguously identifiers "
+                "ensemble realisation information.",
             ),
         ],
     }
@@ -284,11 +293,13 @@ def drs_time_suffixes():
         "members": [
             (
                 "avg",
-                "Indicates data is a single average of DRS frequency data across temporal period N1-N2",
+                "Indicates data is a single average of DRS frequency data "
+                "across temporal period N1-N2",
             ),
             (
                 "clim",
-                "Indicates data is climatological average data at the DRS frequency from the period N1-N2",
+                "Indicates data is climatological average data at the DRS "
+                "frequency from the period N1-N2",
             ),
         ],
     }

@@ -39,19 +39,22 @@ def model():
                 "key_properties",
                 "science.topic",
                 "0.1",
-                "Model default key properties (may be over-ridden in coupled component and realm properties).",
+                "Model default key properties (may be over-ridden in coupled "
+                "component and realm properties).",
             ),
             (
                 "activity_properties",
                 "science.topic",
                 "0.N",
-                "Properties specific to the modelling activity in question, e.g. radiative forcing agents for CMIP6.",
+                "Properties specific to the modelling activity in question, "
+                "e.g. radiative forcing agents for CMIP6.",
             ),
             (
                 "realms",
                 "linked_to(science.realm)",
                 "0.N",
-                "The scientific realms which this model simulates internally, i.e. those which are not linked together using a coupler.",
+                "The scientific realms which this model simulates internally, "
+                "i.e. those which are not linked together using a coupler.",
             ),
             (
                 "realm_coupling",
@@ -59,12 +62,14 @@ def model():
                 "0.N",
                 "Description of a coupling between realms",
             ),
-            # TODO: review these attributes once software package is peer-reviewed
+            # TODO: review these attributes once software package is
+            # peer-reviewed
             (
                 "coupled_components",
                 "linked_to(science.model)",
                 "0.N",
-                "Software components which are linked together using a coupler to deliver this model.",
+                "Software components which are linked together using a "
+                "coupler to deliver this model.",
             ),
             (
                 "coupler",
@@ -76,14 +81,16 @@ def model():
                 "internal_software_components",
                 "linked_to(software.software_component)",
                 "0.N",
-                "Software modules which together provide the functionality for this model.",
+                "Software modules which together provide the functionality "
+                "for this model.",
             ),
         ],
     }
 
 
 def realm():
-    """Scientific area of a numerical model - usually a sub-model or component."""
+    """Scientific area of a numerical model - usually a sub-model or
+    component."""
     return {
         "type": "class",
         "base": "science.topic",
@@ -96,13 +103,15 @@ def realm():
                 "grid",
                 "science.topic",
                 "0.1",
-                "The grid used to layout the variables (e.g. the Global ENDGAME-grid).",
+                "The grid used to layout the variables (e.g. the Global "
+                "ENDGAME-grid).",
             ),
             (
                 "key_properties",
                 "science.topic",
                 "0.1",
-                "Realm key properties which differ from model defaults (grid, timestep etc).",
+                "Realm key properties which differ from model defaults (grid, "
+                "timestep etc).",
             ),
             (
                 "processes",
@@ -110,7 +119,8 @@ def realm():
                 "1.N",
                 "Processes simulated within the realm.",
             ),
-            # TODO: review these attributes once software package is peer-reviewed
+            # TODO: review these attributes once software package is
+            # peer-reviewed
             (
                 "software_frameworks",
                 "software.implementation",
@@ -157,7 +167,8 @@ def realm_coupling():
                 "coupling_details",
                 "str",
                 "0.1",
-                "Description of the coupling algorithm, and any other information (e.g. binlinear interpolation",
+                "Description of the coupling algorithm, and any other "
+                "information (e.g. binlinear interpolation",
             ),
         ],
     }
@@ -219,7 +230,8 @@ def topic():
                 "responsible_parties",
                 "shared.responsibility",
                 "0.N",
-                "People or organisations responsible for providing this information.",
+                "People or organisations responsible for providing this "
+                "information.",
             ),
             (
                 "specialization_id",

@@ -107,7 +107,8 @@ def variable_collection():
                 "geometry",
                 "iso.md_cellgeometry_code",
                 "0.1",
-                "Defines whether or not all variables in collection are point or area based",
+                "Defines whether or not all variables in collection are point "
+                "or area based",
             ),
         ],
     }
@@ -132,15 +133,18 @@ def dataset_type():
             ("analysis", "Product of manipulation of multiple input datasets"),
             (
                 "forecast",
-                "Representation of a future real time predicted from a specific initial condition ",
+                "Representation of a future real time predicted from a "
+                "specific initial condition ",
             ),
             (
                 "hindcast",
-                "Representation of a past real time predicted from a specific initial condition",
+                "Representation of a past real time predicted from a specific "
+                "initial condition",
             ),
             (
                 "projection",
-                "Representation a possible future given initial conditions and assumptions",
+                "Representation a possible future given initial conditions "
+                "and assumptions",
             ),
             ("representation", "Simulation of a particular object or process"),
             (
@@ -149,7 +153,8 @@ def dataset_type():
             ),
             (
                 "dump",
-                "Raw computer output intended for re-use within or by originating software",
+                "Raw computer output intended for re-use within or by "
+                "originating software",
             ),
             (
                 "modified",
@@ -157,11 +162,13 @@ def dataset_type():
             ),
             (
                 "unphysical",
-                "Not intended for comparison with the real world (e.g. as part of a sensitivity study)",
+                "Not intended for comparison with the real world (e.g. as "
+                "part of a sensitivity study)",
             ),
             (
                 "downscaled",
-                "Dataset was downscaled by embedded simulation within driving data at larger scale",
+                "Dataset was downscaled by embedded simulation within driving "
+                "data at larger scale",
             ),
         ],
     }

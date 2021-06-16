@@ -33,7 +33,8 @@ def component_base():
                 "canonical_id",
                 "str",
                 "0.1",
-                "Vocabulary identifier, where this framework/component description was constructed via a controlled vocabulary.",
+                "Vocabulary identifier, where this framework/component "
+                "description was constructed via a controlled vocabulary.",
             ),
             (
                 "description",
@@ -47,7 +48,8 @@ def component_base():
                 "responsible_parties",
                 "shared.responsibility",
                 "0.N",
-                "People or organisations responsible for providing this information.",
+                "People or organisations responsible for providing this "
+                "information.",
             ),
             (
                 "development_history",
@@ -59,7 +61,9 @@ def component_base():
                 "release_date",
                 "time.date_time",
                 "0.1",
-                "The date of publication of the component code (as opposed to the date of publication of the metadata document, or the date of deployment of the model).",
+                "The date of publication of the component code (as opposed "
+                "to the date of publication of the metadata document, or the "
+                "date of deployment of the model).",
             ),
             (
                 "repository",
@@ -98,7 +102,8 @@ def implementation():
                 "canonical_id",
                 "str",
                 "0.1",
-                "Vocabulary identifier, where this framework/component description was constructed via a controlled vocabulary.",
+                "Vocabulary identifier, where this framework/component "
+                "description was constructed via a controlled vocabulary.",
             ),
             (
                 "description",
@@ -138,7 +143,8 @@ def composition():
     that component, or a  child of that component; child components
     cannot couple together parent variables.
 
-    #FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE REVIEWED/REPLACED IN THE NEXT VERSION
+    # FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE
+    REVIEWED/REPLACED IN THE NEXT VERSION
 
     """
     return {
@@ -164,7 +170,8 @@ def development_path():
                 "consortium_name",
                 "str",
                 "0.1",
-                "If model/component is developed as part of a consortium, provide consortium name.",
+                "If model/component is developed as part of a consortium, "
+                "provide consortium name.",
             ),
             (
                 "creators",
@@ -198,7 +205,8 @@ def entry_point():
     compatibility. Every EntryPoint can have a set of arguments
     associated with it. These reference (previously defined) variables.
 
-    #FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE REVIEWED/REPLACED IN THE NEXT VERSION
+    # FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE
+    REVIEWED/REPLACED IN THE NEXT VERSION
 
     """
     return {
@@ -212,7 +220,8 @@ def entry_point():
 def gridspec():
     """Fully defines the computational grid used.
 
-    #FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE REVIEWED/REPLACED IN THE NEXT VERSION
+    # FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE
+    REVIEWED/REPLACED IN THE NEXT VERSION
 
     """
     return {
@@ -238,13 +247,15 @@ def software_component():
                 "connection_points",
                 "software.variable",
                 "0.N",
-                "The set of data entities which are available for I/O and/or coupling.",
+                "The set of data entities which are available for I/O and/or "
+                "coupling.",
             ),
             (
                 "coupling_framework",
                 "software.coupling_framework",
                 "0.1",
-                "The coupling framework that this entire component conforms to.",
+                "The coupling framework that this entire component conforms "
+                "to.",
             ),
             ("dependencies", "software.entry_point", "0.N", "#FIXME."),
             (
@@ -275,7 +286,8 @@ def software_component():
                 "depends_on",
                 "linked_to(software.software_component)",
                 "0.N",  # added dch/ssw 1016-0804
-                "The software components whose outputs are inputs to this software component.",
+                "The software components whose outputs are inputs to this "
+                "software component.",
             ),
             # Would like to think about making this a stand-alone document
         ],
@@ -290,7 +302,8 @@ def variable():
     Input and output variables will be a subset of these software
     variables.
 
-    #FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE REVIEWED/REPLACED IN THE NEXT VERSION
+    # FIXME: THIS CLASS IS BELIEVED TO BE OBSOLETE AND WILL BE
+    REVIEWED/REPLACED IN THE NEXT VERSION
 
     """
     return {
