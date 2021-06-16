@@ -1,0 +1,27 @@
+name: Linting
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, reopened, ready_for_review, edited]
+    branches:
+      - master
+
+jobs:
+  # Lint against selected pre-commit hooks (see https://pre-commit.com
+  # and https://github.com/pre-commit/action).
+  # *The config. applied here is from our .pre-commit-config.yaml*
+  #
+  # Note the pre-commit linting includes all of the other linters configured
+  # to run as pre-commit hooks, namely black and flake8, so there is no
+  # need to set these up individually!
+  pre-commit:
+    # Use the latest Ubuntu as representative, since for linting the OS is
+    # not important.
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - uses: pre-commit/action@v2.0.0
