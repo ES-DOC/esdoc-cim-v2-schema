@@ -414,7 +414,7 @@ def simulation():
                 "ensemble_id",
                 "activity.axis_member",
                 "0.N",
-                """ Identification within ensemble axes via axis member. 
+                """ Identification within ensemble axes via axis member.
                  (Multiple axis members within a simulation cannot share the same ensemble_axis.)
                  (There must be an axis_member instance for each ensemble axis in a parent ensemble.)
                  """,
