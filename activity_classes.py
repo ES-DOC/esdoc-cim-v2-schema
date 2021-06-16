@@ -458,7 +458,7 @@ def simulation():
                 "end_time",
                 "time.date_time",
                 "0.1",
-                "The start date-time of the simulation. e.g. "
+                "The end date-time of the simulation. e.g. "
                 "2087-11-30 12:00:00",
             ),
             (
