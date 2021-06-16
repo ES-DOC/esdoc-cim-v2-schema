@@ -79,9 +79,11 @@ def activity():
 
 
 def axis_member():
-    """Description of a given ensemble member. It will normally be related to a specific
-    ensemble requirement. Note that start dates can be extracted directly from the simulations
-    and do not need to be recorded with an axis member description.
+    """Description of a given ensemble member.
+
+    It will normally be related to a specific ensemble requirement. Note
+    that start dates can be extracted directly from the simulations and
+    do not need to be recorded with an axis member description.
 
     """
     return {
@@ -125,9 +127,10 @@ def axis_member():
 
 
 def conformance():
-    """A specific conformance. Describes how a particular numerical
-    requirement has been implemented.  Will normally be linked from an
-    ensemble descriptor.
+    """A specific conformance.
+
+    Describes how a particular numerical requirement has been
+    implemented.  Will normally be linked from an ensemble descriptor.
 
     """
     return {
@@ -195,9 +198,10 @@ def conformance_type():
 
 def ensemble():
     """Generic ensemble definition.
-    Holds the definition of how the various ensemble members have been configured.
-    If ensemble axes are not present, then this is either a single member ensemble,
-    or part of an uber ensemble.
+
+    Holds the definition of how the various ensemble members have been
+    configured. If ensemble axes are not present, then this is either a
+    single member ensemble, or part of an uber ensemble.
 
     """
     return {
@@ -334,8 +338,7 @@ def child_simulation():
 def simulation():
 
     """Simulation class provides the integrating link about what models
-    were run and wny.
-    """
+    were run and wny."""
 
     return {
         "type": "class",
@@ -460,9 +463,12 @@ def simulation():
 
 
 def uber_ensemble():
-    """An ensemble made up of other ensembles. Often used where parts of an ensemble were run by
-    different institutes. Could also be used when a new experiment is designed which can use
-    ensemble members from previous experiments and/or projects.
+    """An ensemble made up of other ensembles.
+
+    Often used where parts of an ensemble were run by different
+    institutes. Could also be used when a new experiment is designed
+    which can use ensemble members from previous experiments and/or
+    projects.
 
     """
     return {

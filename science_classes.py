@@ -11,8 +11,10 @@
 def model():
     """A model component: can be executed standalone, and has as
     scientific description available via a link to a science.domain
-    document. (A configured model can be understood in terms of a
-    simulation, a model, and a configuration.).
+    document.
+
+    (A configured model can be understood in terms of a simulation, a
+    model, and a configuration.).
 
     """
     return {
@@ -162,7 +164,8 @@ def realm_coupling():
 
 
 def topic():
-    """An organized collection of details upon a specific topic, e.g. model key properties."""
+    """An organized collection of details upon a specific topic, e.g.
+    model key properties."""
     return {
         "type": "class",
         "base": None,
@@ -235,10 +238,8 @@ def topic():
 
 
 def topic_property_set():
-    """Provides specific details related to a topic (i.e. process, sub-process,
-    grid, key properties, etc).
-
-    """
+    """Provides specific details related to a topic (i.e. process, sub-
+    process, grid, key properties, etc)."""
     return {
         "type": "class",
         "base": None,

@@ -10,10 +10,8 @@
 
 
 def text_blob():
-    """Provides a text class which supports plaintext, html, and
-    friends (or will do).
-
-    """
+    """Provides a text class which supports plaintext, html, and friends
+    (or will do)."""
     return {
         "type": "class",
         "base": None,
@@ -81,9 +79,11 @@ def citation():
 
 
 def extra_attribute():
-    """An extra attribute with key and value needed to encode further information
-    not in the CIM domain model or specialisation. Typical use case: in parsing
-    data and encoding attributes found in data.
+    """An extra attribute with key and value needed to encode further
+    information not in the CIM domain model or specialisation.
+
+    Typical use case: in parsing data and encoding attributes found in
+    data.
 
     """
     return {
@@ -101,10 +101,9 @@ def extra_attribute():
 
 
 def nil_reason():
-    """Provides an enumeration of possible reasons why a property has not been defined
-    Based on GML nilReason as discussed here: https://www.seegrid.csiro.au/wiki/AppSchemas/NilValues.
-
-    """
+    """Provides an enumeration of possible reasons why a property has
+    not been defined Based on GML nilReason as discussed here:
+    https://www.seegrid.csiro.au/wiki/AppSchemas/NilValues."""
     return {
         "type": "enum",
         "is_open": False,
@@ -125,10 +124,8 @@ def nil_reason():
 
 
 def online_resource():
-    """A minimal approximation of ISO19115 CI_ONLINERESOURCE, provides a link and details
-    of how to use that link.
-
-    """
+    """A minimal approximation of ISO19115 CI_ONLINERESOURCE, provides a
+    link and details of how to use that link."""
     return {
         "type": "class",
         "base": None,
@@ -149,10 +146,13 @@ def online_resource():
 
 
 def party():
-    """Implements minimal material for an ISO19115-1 (2014) compliant party.
-    For our purposes this is a much better animal than the previous responsibleParty
-    which munged roles together with people. Note we have collapsed CI_Contact,
-    CI_Individual and CI_Organisation as well as the abstract CI_Party.
+    """Implements minimal material for an ISO19115-1 (2014) compliant
+    party.
+
+    For our purposes this is a much better animal than the previous
+    responsibleParty which munged roles together with people. Note we
+    have collapsed CI_Contact, CI_Individual and CI_Organisation as well
+    as the abstract CI_Party.
 
     """
     return {
@@ -184,9 +184,11 @@ def party():
 
 def quality_review():
     """Assertions as to the completeness and quality of a document.
-    Not to be confused with assertions as to the quality of the resource described
-    by the document (as covered by the iso.quality_report).
-    A future version of this ontology may rename this class.
+
+    Not to be confused with assertions as to the quality of the resource
+    described by the document (as covered by the iso.quality_report). A
+    future version of this ontology may rename this class.
+
     """
     return {
         "type": "class",
@@ -248,8 +250,10 @@ def quality_status():
 
 
 def responsibility():
-    """Implements the ISO19115-1 (2014) CI_Responsibility (which replaces
-    responsibleParty). Combines a person and their role in doing something.
+    """Implements the ISO19115-1 (2014) CI_Responsibility (which
+    replaces responsibleParty).
+
+    Combines a person and their role in doing something.
 
     """
     return {
@@ -281,8 +285,11 @@ def responsibility():
 
 
 def role_code():
-    """Responsibility role codes: roles that a party may play in delivering a responsibility.
+    """Responsibility role codes: roles that a party may play in
+    delivering a responsibility.
+
     This is an extension and modification of CI_RoleCode from ISO19115.
+
     """
     return {
         "type": "enum",
@@ -329,8 +336,10 @@ def role_code():
 
 
 def text_blob_encoding():
-    """Types of text understood by the CIM notebook. Currently only
-    plaintext, but we expect safe HTML to be supported as soon as practicable.
+    """Types of text understood by the CIM notebook.
+
+    Currently only plaintext, but we expect safe HTML to be supported as
+    soon as practicable.
 
     """
     return {
@@ -341,9 +350,11 @@ def text_blob_encoding():
 
 
 def numeric():
-    """
-    A number which comes with a unit, potentially from a controlled vocabulary of units.
+    """A number which comes with a unit, potentially from a controlled
+    vocabulary of units.
+
     #FIXME: Need to work on the relationship between unit_source and base_unit.
+
     """
     return {
         "type": "class",

@@ -68,7 +68,7 @@ def compute_pool():
 
 
 def interconnect():
-    """The interconnect used within a machine to join nodes together"""
+    """The interconnect used within a machine to join nodes together."""
     return {
         "type": "class",
         "base": None,
@@ -94,7 +94,7 @@ def interconnect():
 
 
 def nic():
-    """Network Interface Card"""
+    """Network Interface Card."""
     return {
         "type": "class",
         "base": None,
@@ -114,7 +114,8 @@ def nic():
 
 
 def machine():
-    """A computer/system/platform/machine which is used for simulation."""
+    """A computer/system/platform/machine which is used for
+    simulation."""
     return {
         "type": "class",
         "base": "platform.partition",
@@ -139,7 +140,8 @@ def machine():
 
 
 def partition():
-    """A major partition (component) of a computing system (aka machine)."""
+    """A major partition (component) of a computing system (aka
+    machine)."""
     return {
         "type": "class",
         "base": None,
@@ -208,11 +210,13 @@ def partition():
 
 
 def performance():
-    """
-    Describes the properties of a performance of a configured model on
-    a particular system/machine.
+    """Describes the properties of a performance of a configured model
+    on a particular system/machine.
+
     Based on "CPMIP: Measurements of Real Computational Performance of
-    Earth System Models" (Balaji et. al. 2016, doi:10.5194/gmd-2016-197).
+    Earth System Models" (Balaji et. al. 2016,
+    doi:10.5194/gmd-2016-197).
+
     """
     return {
         "type": "class",
@@ -302,7 +306,8 @@ def performance():
 
 
 def performance_detail():
-    """Information about how the various components of performance were related"""
+    """Information about how the various components of performance were
+    related."""
     return {
         "type": "class",
         "base": None,
@@ -339,7 +344,7 @@ def performance_detail():
 
 
 def project_cost():
-    """Cost of an experiment or project on a particular platform"""
+    """Cost of an experiment or project on a particular platform."""
     return {
         "type": "class",
         "base": None,
@@ -438,7 +443,8 @@ def storage_pool():
 
 
 def storage_systems():
-    """Controlled vocabulary for storage types (including filesystems)."""
+    """Controlled vocabulary for storage types (including
+    filesystems)."""
     return {
         "type": "enum",
         "is_open": True,

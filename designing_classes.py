@@ -9,7 +9,8 @@
 
 
 def domain_requirements():
-    """Properties of the domain which needs to be simulated, extent and/or resolution."""
+    """Properties of the domain which needs to be simulated, extent
+    and/or resolution."""
     return {
         "type": "class",
         "base": "designing.numerical_requirement",
@@ -58,11 +59,9 @@ def ensemble_requirement():
 
 
 def ensemble_types():
-    """Defines the various axes along which one can set up an ensemble, whether
-    as an experiment designer, or in designing a 'response' ensemble around an
-    experiment.
-
-    """
+    """Defines the various axes along which one can set up an ensemble,
+    whether as an experiment designer, or in designing a 'response'
+    ensemble around an experiment."""
     return {
         "type": "enum",
         "is_open": False,
@@ -140,7 +139,8 @@ def forcing_constraint():
 
 
 def forcing_types():
-    """Defines the possible set of forcing types for a forcing constraint."""
+    """Defines the possible set of forcing types for a forcing
+    constraint."""
     return {
         "type": "enum",
         "is_open": False,
@@ -160,7 +160,8 @@ def forcing_types():
 
 
 def initialisation_requirement():
-    """A requirement on how a particular simulation should be initialised."""
+    """A requirement on how a particular simulation should be
+    initialised."""
     return {
         "type": "class",
         "base": "designing.numerical_requirement",
@@ -196,10 +197,8 @@ def initialisation_requirement():
 
 
 def multi_ensemble():
-    """In the case of multiple ensemble axes, defines how they
-    are set up and ordered.
-
-    """
+    """In the case of multiple ensemble axes, defines how they are set
+    up and ordered."""
     return {
         "type": "class",
         "base": "designing.numerical_requirement",
@@ -313,7 +312,8 @@ def experimental_relationships():
 
 
 def numerical_requirement():
-    """A numerical requirement associated with a numerical experiment."""
+    """A numerical requirement associated with a numerical
+    experiment."""
     return {
         "type": "class",
         "base": "activity.activity",
@@ -359,7 +359,8 @@ def numerical_requirement():
 
 
 def numerical_requirement_scope():
-    """The scope to which a numerical requirement may or may not apply."""
+    """The scope to which a numerical requirement may or may not
+    apply."""
     return {
         "type": "enum",
         "is_open": False,
@@ -385,7 +386,8 @@ def numerical_requirement_scope():
 
 
 def output_requirement():
-    """Provides details of what output is required and when from an experiment."""
+    """Provides details of what output is required and when from an
+    experiment."""
     return {
         "type": "class",
         "base": "designing.numerical_requirement",
@@ -403,10 +405,9 @@ def output_requirement():
 
 
 def objective():
-    """
-    Describes a specific scientific objective within a project, and any necessary
-    outputs from the experiment needed to meet this objective.
-    """
+    """Describes a specific scientific objective within a project, and
+    any necessary outputs from the experiment needed to meet this
+    objective."""
     return {
         "type": "class",
         "base": None,
@@ -432,10 +433,7 @@ def objective():
 
 
 def project():
-    """
-    Describes a scientific project.
-
-    """
+    """Describes a scientific project."""
     return {
         "type": "class",
         "base": "activity.activity",

@@ -7,9 +7,7 @@
 
 
 def cmip_dataset():
-    """
-    A CMIP dataset
-    """
+    """A CMIP dataset."""
     return {
         "type": "class",
         "base": "data.dataset",
@@ -35,9 +33,11 @@ def cmip_dataset():
 
 
 def cmip_simulation():
-    """
-    A CMIP simulation. In most CMIP cases this should be auto-generated
-    from output dataset file headers.
+    """A CMIP simulation.
+
+    In most CMIP cases this should be auto-generated from output dataset
+    file headers.
+
     """
 
     return {

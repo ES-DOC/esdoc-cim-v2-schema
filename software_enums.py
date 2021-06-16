@@ -29,10 +29,8 @@ def coupling_framework():
 
 
 def programming_language():
-    """The set of terms which define programming languages used for earth
-    system simulation.
-
-    """
+    """The set of terms which define programming languages used for
+    earth system simulation."""
     return {
         "type": "enum",
         "is_open": True,

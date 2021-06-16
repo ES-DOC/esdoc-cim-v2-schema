@@ -10,8 +10,9 @@
 
 def calendar():
     """Describes the calendar required/used in an experiment/simulation.
-    This class is based on the calendar attributes and properties found in the
-    CF netCDF conventions.
+
+    This class is based on the calendar attributes and properties found
+    in the CF netCDF conventions.
 
     """
     return {
@@ -90,9 +91,11 @@ def calendar_types():
 
 
 def date_time():
-    """A date or time. Either in simulation time with the simulation
-    calendar, or with reference to a simulation start, in which
-    case the datetime is an interval after the start date.
+    """A date or time.
+
+    Either in simulation time with the simulation calendar, or with
+    reference to a simulation start, in which case the datetime is an
+    interval after the start date.
 
     """
     return {
@@ -118,9 +121,11 @@ def date_time():
 
 
 def datetime_set():
-    """A set of times. This is an abstract class which is specialised into
-    a periodic or aperiodic (irregular) list.  Note that we assume either a
-    periodic set of dates which can be date and/or time, or an irregular set
+    """A set of times.
+
+    This is an abstract class which is specialised into a periodic or
+    aperiodic (irregular) list.  Note that we assume either a periodic
+    set of dates which can be date and/or time, or an irregular set
     which can only be dates.
 
     """
@@ -134,10 +139,8 @@ def datetime_set():
 
 
 def irregular_dateset():
-    """A set of irregularly spaced times, provided as a comma separated string of yyyy-mm-dd in
-    the appropriate calendar.
-
-    """
+    """A set of irregularly spaced times, provided as a comma separated
+    string of yyyy-mm-dd in the appropriate calendar."""
     return {
         "type": "class",
         "base": "time.datetime_set",
@@ -222,7 +225,8 @@ def time_period():
 
 
 def time_units():
-    """Appropriate Time units for experiment durations in NWP and Climate Modelling."""
+    """Appropriate Time units for experiment durations in NWP and
+    Climate Modelling."""
     return {
         "type": "enum",
         "is_open": False,

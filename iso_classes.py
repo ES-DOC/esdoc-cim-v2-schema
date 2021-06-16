@@ -22,9 +22,11 @@ preferred, and process_step itself uses CIM data.dataset for source inputs.
 
 
 def lineage():
-    """
-    Representation of the ISO19115 lineage provenance description.
-    Information about the events or source data used in constructing a dataset
+    """Representation of the ISO19115 lineage provenance description.
+
+    Information about the events or source data used in constructing a
+    dataset
+
     """
     return {
         "type": "class",
@@ -57,9 +59,8 @@ def lineage():
 
 
 def process_step():
-    """
-    Representation of the ISO19115 LE_ProcessStep and parent LI_ProcessStep classes.
-    """
+    """Representation of the ISO19115 LE_ProcessStep and parent
+    LI_ProcessStep classes."""
 
     return {
         "type": "class",
@@ -123,14 +124,16 @@ def process_step():
 
 
 def processing():
-    """
-    Representation of the ISO19115 LE_Processing class
-    Note that the algorithm definition has been adjusted to be more generic
-    and less "instrument obsessed" than ISO19115. Name is an extension, and
-    the identifier is simply a code string (id) ... but given there may be
-    no identifier space for this processing step, it is made optional, rather
-    than mandatory as in ISO. For export to ISO, the recommendation is to
-    use the identifier of the CIM document which uses this class.
+    """Representation of the ISO19115 LE_Processing class Note that the
+    algorithm definition has been adjusted to be more generic and less
+    "instrument obsessed" than ISO19115.
+
+    Name is an extension, and the identifier is simply a code string
+    (id) ... but given there may be no identifier space for this
+    processing step, it is made optional, rather than mandatory as in
+    ISO. For export to ISO, the recommendation is to use the identifier
+    of the CIM document which uses this class.
+
     """
 
     return {
@@ -187,10 +190,11 @@ def processing():
 
 
 def process_step_report():
-    """
-    Report of what happened during a processing step.
-    Representation of ISO LE_ProcessStepReport, modified to
-    use links or body text, rather than files.
+    """Report of what happened during a processing step.
+
+    Representation of ISO LE_ProcessStepReport, modified to use links or
+    body text, rather than files.
+
     """
     return {
         "type": "class",
@@ -217,7 +221,7 @@ def process_step_report():
 
 
 def algorithm():
-    """Representation of the LE_Algorithm Class"""
+    """Representation of the LE_Algorithm Class."""
     return {
         "type": "class",
         "base": None,
@@ -237,7 +241,7 @@ def algorithm():
 
 
 def quality_report():
-    """ """
+    """"""
     return {
         "type": "class",
         "base": None,
@@ -267,10 +271,14 @@ def quality_report():
 
 
 def quality_issue():
-    """A description of some scientific quality issue known about a resource described
-    by this ontology. E.g. if a model is known to have a particular problem, or there
-    has been a problem found with a dataset. Expect that most such detail should be
-    managed in an external (and formal) issue tracker."""
+    """A description of some scientific quality issue known about a
+    resource described by this ontology.
+
+    E.g. if a model is known to have a particular problem, or there has
+    been a problem found with a dataset. Expect that most such detail
+    should be managed in an external (and formal) issue tracker.
+
+    """
 
     return {
         "type": "class",
@@ -296,9 +304,12 @@ def quality_issue():
 
 
 def quality_evaluation_result():
-    """The output of some quality evaluation against a specific measure for evaluation quality.
-    This flattens several ISO classes, including DQ_Result, DQ_ConformanceResult, DQ_QuantativeResult,
-    DQ_Element.
+    """The output of some quality evaluation against a specific measure
+    for evaluation quality.
+
+    This flattens several ISO classes, including DQ_Result,
+    DQ_ConformanceResult, DQ_QuantativeResult, DQ_Element.
+
     """
 
     return {
@@ -349,7 +360,7 @@ def quality_evaluation_result():
 
 
 def quality_evaluation_output():
-    """A specific evaluation output"""
+    """A specific evaluation output."""
     return {
         "type": "class",
         "base": "shared.online_resource",

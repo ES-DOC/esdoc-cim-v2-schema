@@ -9,8 +9,9 @@
 
 
 def dataset():
-    """
-    Dataset discovery information. This may be further enhanced for ISO (or any other) compliance via
+    """Dataset discovery information.
+
+    This may be further enhanced for ISO (or any other) compliance via
     the extra attributes or project specific sub-classing.
 
     """
@@ -88,10 +89,8 @@ def dataset():
 
 
 def variable_collection():
-    """
-    A collection of variables within the scope of a code or process element.
-
-    """
+    """A collection of variables within the scope of a code or process
+    element."""
     return {
         "type": "class",
         "base": None,
@@ -116,8 +115,12 @@ def variable_collection():
 
 def dataset_type():
     """Classifier of dataset type, to inform discovery metadata.
-    Informed by Bedia et al, https://doi.org/10.1016/j.envsoft.2019.07.005,
-    but adjusted for more generality."""
+
+    Informed by Bedia et al,
+    https://doi.org/10.1016/j.envsoft.2019.07.005, but adjusted for more
+    generality.
+
+    """
     return {
         "type": "enum",
         "is_open": False,

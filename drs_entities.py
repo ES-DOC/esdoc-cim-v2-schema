@@ -57,7 +57,8 @@ def drs_atomic_dataset():
 
 
 def drs_ensemble_identifier():
-    """Identifies a 'response ensemble' realisation using the semantic content ofa 'run_variant_id'."""
+    """Identifies a 'response ensemble' realisation using the semantic
+    content ofa 'run_variant_id'."""
     return {
         "type": "class",
         "base": None,
@@ -129,7 +130,9 @@ def drs_frequency_types():
 
 
 def drs_geographical_indicator():
-    """Specifies geographical subsets described by bounding boxes or by named regions.
+    """Specifies geographical subsets described by bounding boxes or by
+    named regions.
+
     One of spatial domain or bounding box must appear.
 
     """
@@ -161,7 +164,8 @@ def drs_geographical_indicator():
 
 
 def drs_geographical_operators():
-    """Set of permitted spatial averaging operator suffixes for drs spatial indicators (yyyy-zzzz)."""
+    """Set of permitted spatial averaging operator suffixes for drs
+    spatial indicators (yyyy-zzzz)."""
     return {
         "type": "enum",
         "is_open": False,
@@ -211,7 +215,8 @@ def drs_realms():
 
 
 def drs_simulation_identifier():
-    """That part of the DRS which identifies the response to the experiment: the simulation."""
+    """That part of the DRS which identifies the response to the
+    experiment: the simulation."""
     return {
         "type": "class",
         "base": None,
@@ -241,10 +246,11 @@ def drs_simulation_identifier():
 
 def drs_temporal_identifier():
     """Provides information about temporal subsetting and/or averaging.
-    If only N1 is present, it a temporal instant,
-    If N1-N2 are present with no suffix, it is a temporal subset,
-    If N1-N2 with a suffix are present, then some sort of temporal averaging has been applied across
-    the period.
+
+    If only N1 is present, it a temporal instant, If N1-N2 are present
+    with no suffix, it is a temporal subset, If N1-N2 with a suffix are
+    present, then some sort of temporal averaging has been applied
+    across the period.
 
     """
     return {
@@ -270,7 +276,8 @@ def drs_temporal_identifier():
 
 
 def drs_time_suffixes():
-    """Set of permitted time averaging suffixes for drs temporal identifiers."""
+    """Set of permitted time averaging suffixes for drs temporal
+    identifiers."""
     return {
         "type": "enum",
         "is_open": False,

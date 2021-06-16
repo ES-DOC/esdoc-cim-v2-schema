@@ -10,7 +10,10 @@
 
 def ds_initiative_typecode():
     """Classifier of initiative, to inform ISO19115 metadata.
-    Formally a DS_InitiativeTypeCode, from ISO19115_2011."""
+
+    Formally a DS_InitiativeTypeCode, from ISO19115_2011.
+
+    """
     # Do not modify or extend these definitions unless using a later version of ISO19115
     return {
         "type": "enum",
@@ -54,7 +57,11 @@ def ds_initiative_typecode():
 
 
 def md_cellgeometry_code():
-    """Classifier of cells. Whether a grid point is point or area."""
+    """Classifier of cells.
+
+    Whether a grid point is point or area.
+
+    """
     return {
         "type": "enum",
         "is_open": False,
@@ -92,7 +99,7 @@ def md_progress_code():
 
 
 def dq_evaluation_result_type():
-    """Classifier of evaluation results"""
+    """Classifier of evaluation results."""
     return {
         "type": "enum",
         "is_open": False,

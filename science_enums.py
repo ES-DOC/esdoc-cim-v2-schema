@@ -10,7 +10,8 @@
 
 
 def model_types():
-    """Defines a set of model types relevant to weather, climate, and earth system modelling."""
+    """Defines a set of model types relevant to weather, climate, and
+    earth system modelling."""
     return {
         "type": "enum",
         "is_open": False,

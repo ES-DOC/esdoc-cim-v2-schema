@@ -9,8 +9,10 @@
 
 
 def doc_meta_info():
-    """Encapsulates document meta information used by es-doc machinery. Will not normally be
-    populated by humans. May duplicate information held in 'visible' metadata.
+    """Encapsulates document meta information used by es-doc machinery.
+
+    Will not normally be populated by humans. May duplicate information
+    held in 'visible' metadata.
 
     """
     return {
@@ -140,9 +142,12 @@ def doc_reference():
 
 
 def formal_association():
-    """Holds a named association between entities, where the name of
-    the association comes from a specific named enumeration. The
-    association can point at a CIM entity, or a remote entity."""
+    """Holds a named association between entities, where the name of the
+    association comes from a specific named enumeration.
+
+    The association can point at a CIM entity, or a remote entity.
+
+    """
     return {
         "type": "class",
         "base": "shared.doc_reference",
