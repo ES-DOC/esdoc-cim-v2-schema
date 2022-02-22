@@ -27,9 +27,7 @@ def compute_pool():
                 "clock_cycle_concurrency",
                 "int",
                 "0.1",
-                "The number of operations which can be carried out "
-                "concurrently in a single clock cycle of a single core. "
-                "E.g. 4.",
+                "The number of operations which can be carried out concurrently in a single clock cycle of a single core. E.g. 4.",
             ),
             (
                 "clock_speed",
@@ -82,7 +80,7 @@ def interconnect():
             (
                 "description",
                 "str",
-                "0.1.",
+                "0.1",
                 "Technical description of interconnect layout",
             ),
             (
@@ -244,16 +242,13 @@ def performance():
                 "resolution",
                 "int",
                 "0.1",
-                "Resolution measured as the number of gridpoints (or more "
-                "generally, spatial degrees of freedom) NX x NY x NZ per "
-                "component with an independent discretization.",
+                "Resolution measured as the number of gridpoints (or more generally, spatial degrees of freedom) NX x NY x NZ per component with an independent discretization.",
             ),
             (
                 "complexity",
                 "int",
                 "0.1",
-                "Complexity measured as the number of prognostic variables "
-                "per component with an independent discretization.",
+                "Complexity measured as the number of prognostic variables per component with an independent discretization.",
             ),
             (
                 "platform",
@@ -267,44 +262,31 @@ def performance():
                 "simulated_years_per_day",
                 "float",
                 "0.1",
-                "Simulated years per day (SYPD) in a 24h period on the given "
-                "platform.",
+                "Simulated years per day (SYPD) in a 24h period on the given platform.",
             ),
             (
                 "actual_simulated_years_per_day",
                 "float",
                 "0.1",
-                "Actual simulated years per day (ASYPD) in a 24h period on "
-                "the given platform obtained from a typical long-running "
-                "simulation with the model. Inclusive of system "
-                "interruptions, queue wait time, or issues with the model "
-                "workflow, etc.",
+                "Actual simulated years per day (ASYPD) in a 24h period on the given platform obtained from a typical long-running simulation with the model. Inclusive of system interruptions, queue wait time, or issues with the model workflow, etc.",
             ),
             (
                 "core_hours_per_simulated_year",
                 "float",
                 "0.1",
-                "Core-hours per simulated year (CHSY). This is measured as "
-                "the product of the model runtime for 1 SY, and the numbers "
-                "of cores allocated. Note that if allocations are done on a "
-                "node basis then all cores on a node are charged against the "
-                "allocation, regardless of whether or not they are used.",
+                "Core-hours per simulated year (CHSY). This is measured as the product of the model runtime for 1 SY, and the numbers of cores allocated. Note that if allocations are done on a node basis then all cores on a node are charged against the allocation, regardless of whether or not they are used.",
             ),
             (
                 "joules_per_simulated_year",
                 "float",
                 "0.1",
-                "The energy cost of a simulation, measured in joules per "
-                "simulated year (JPSY). Given the energy E in joules consumed "
-                "over a budgeting interval T (generally 1 month or 1 year, in "
-                "units of hours), JPSY=CHSY*E*T/NP.",
+                "The energy cost of a simulation, measured in joules per simulated year (JPSY). Given the energy E in joules consumed over a budgeting interval T (generally 1 month or 1 year, in units of hours), JPSY=CHSY*E*T/NP.",
             ),
             (
                 "parallelisation",
                 "float",
                 "0.1",
-                "Total number of cores (NP) allocated for the run, regardless "
-                "of whether or not all cores were used all of the time.",
+                "Total number of cores (NP) allocated for the run, regardless of whether or not all cores were used all of the time.",
             ),
             (
                 "further_detail",
@@ -338,37 +320,25 @@ def performance_detail():
                 "coupling_cost",
                 "float",
                 "0.1",
-                "Coupling cost measures the overhead caused by coupling. This "
-                "can include the cost of the coupling algorithm itself (which "
-                "may involve grid interpolation and computation of transfer "
-                "coefficients for conservative coupling) as well as load "
-                "imbalance. It is the normalized difference between the "
-                "time-processor integral for the whole model versus the sum "
-                "of individual concurrent components.",
+                "Coupling cost measures the overhead caused by coupling. This can include the cost of the coupling algorithm itself (which may involve grid interpolation and computation of transfer coefficients for conservative coupling) as well as load imbalance. It is the normalized difference between the time-processor integral for the whole model versus the sum of individual concurrent components.",
             ),
             (
                 "memory_bloat",
                 "float",
                 "0.1",
-                "Memory bloat is the ratio of the actual memory size, defined "
-                "as M − NP × X where M is the measured runtime memory usage "
-                "and X the size of the executable files, to the ideal memory "
-                "size Mi, the size of the complete model state, which in "
-                "theory is all you need to hold in memory.",
+                "Memory bloat is the ratio of the actual memory size, defined as M minus NP  multiplied by X where M is the measured runtime memory usage and X the size of the executable files, to the ideal memory size Mi, the size of the complete model state, which in theory is all you need to hold in memory.",
             ),
             (
                 "data_output_cost",
                 "float",
                 "0.1",
-                "Data output cost is the cost of performing I/O, and is the "
-                "ratio of CHSY with and without I/O.",
+                "Data output cost is the cost of performing I/O, and is the ratio of CHSY with and without I/O.",
             ),
             (
                 "data_intensity",
                 "float",
                 "0.1",
-                "Data intensity is the amount of data produced per "
-                "compute-hour, in units GB per compute-hour.",
+                "Data intensity is the amount of data produced per compute-hour, in units GB per compute-hour.",
             ),
         ],
     }
@@ -386,13 +356,13 @@ def project_cost():
             (
                 "activity",
                 "linked_to(activity.activity)",
-                "1.1.",
+                "1.1",
                 "Project or Experiment of interest",
             ),
             (
                 "platform",
                 "linked_to(platform.machine)",
-                "1.1.",
+                "1.1",
                 "Machine used for project",
             ),
             (
@@ -423,7 +393,7 @@ def project_cost():
                 "etc.",
             ),
             (
-                "peak data",
+                "peak_data",
                 "shared.numeric",
                 "0.1",
                 "Maximum volume of data held during project",

@@ -73,7 +73,7 @@ def dataset():
                 "Set of additional keywords to aid discovery/classification",
             ),
             (
-                "further attributes",
+                "further_attributes",
                 "shared.extra_attribute",
                 "0.N",
                 "Additional attributes as necessary.",

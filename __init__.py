@@ -25,15 +25,14 @@ from . import time as time_classes
 NAME = "cim"
 
 # Ontology version.
-VERSION = "2.2.0.pre1"
+VERSION = "2"
 
 # Ontology doc string.
 DOC = "ESDOC CIM ontology schema - version 2.2"
 
 
 def activity():
-    """Types that describe context against which climate models are
-    run."""
+    """Types that describe context against which climate models are run."""
     return {activity_classes}
 
 
@@ -53,8 +52,7 @@ def designing():
 
 
 def drs():
-    """Types that describe the directory structures to which climate
-    model output is written."""
+    """Types that describe the directory structures to which climate model output is written."""
     return {drs_entities}
 
 
@@ -64,8 +62,7 @@ def iso():
 
 
 def platform():
-    """Types that describe hardware upon which climate models are
-    run."""
+    """Types that describe hardware upon which climate models are run."""
     return {platform_classes}
 
 
@@ -75,18 +72,15 @@ def science():
 
 
 def shared():
-    """Shared types that might be imported from other packages within
-    the ontology."""
+    """Shared types that might be imported from other packages within the ontology."""
     return {shared_classes, shared_classes_doc}
 
 
 def software():
-    """Types that describe the software that constitutes a climate
-    model."""
+    """Types that describe the software that constitutes a climate model."""
     return {software_classes, software_enums}
 
 
 def time():
-    """Types that describe the software that constitutes a climate
-    model."""
+    """Types that describe the software that constitutes a climate model."""
     return {time_classes}

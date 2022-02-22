@@ -366,6 +366,7 @@ def numeric():
     """
     return {
         "type": "class",
+        "base": None,
         "is_abstract": False,
         "is_document": False,
         "pstr": ("{}{}", ("value", "units")),

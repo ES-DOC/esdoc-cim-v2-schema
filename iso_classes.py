@@ -160,13 +160,13 @@ def processing():
                 "MD_Identifier",
             ),
             (
-                "softwareReference",
+                "software_reference",
                 "linked_to(shared.citation)",
                 "0.N",
                 "Reference to document describing processing software",
             ),
             (
-                "procedureDescription",
+                "procedure_description",
                 "str",
                 "0.1",
                 "additional details about the processing procedures",
@@ -178,7 +178,7 @@ def processing():
                 "reference to documentation describing the processing",
             ),
             (
-                "runTimeParameters",
+                "runtime_parameters",
                 "str",
                 "0.1",
                 "parameters to control the processing operations, entered at "
@@ -247,7 +247,9 @@ def algorithm():
 
 
 def quality_report():
-    """ """
+    """A report detailing the quality of some aspect of the target resource.
+    
+    """
     return {
         "type": "class",
         "base": None,
