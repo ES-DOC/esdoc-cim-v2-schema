@@ -231,10 +231,10 @@ def performance():
                 "0.1",
                 "Name for performance (experiment/test/whatever).",
             ),
-            # CPMIP model and platform
+            # CPMIP model/realm and platform
             (
                 "model",
-                "linked_to(science.model)",
+                "linked_to(science.model), linked_to(science.realm)",
                 "1.1",
                 "Model for which performance was tested.",
             ),
