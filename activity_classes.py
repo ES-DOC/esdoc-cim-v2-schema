@@ -176,7 +176,7 @@ def conformance():
             ("cardinality", "duration", "0.0"),
             ("cardinality", "canonical_name", "0.0"),
             ("cardinality", "keywords", "0.0"),
-            ("cardinality", "description", "1.1"),
+            ("cardinality", "description", "0.1"),
         ],
     }
 
