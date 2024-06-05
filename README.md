@@ -1,4 +1,4 @@
-# esdoc-cim-schema-v1
+# `esdoc-cim-schema-v2`
 
 **Repository containing canonical definition of Metafor Common Information Model (version 2).**
 
@@ -12,6 +12,6 @@ ES-DOC stands for 'Earth Science - Documentation'. Its goal is to provide softwa
 Metafor was a European project tasked with defining a metadata standard for describing scientific processes, particularly climate modelling processes.  This metadata standard came to be known as the CIM (Common Information Model).
 
 
-## What is esdoc-cim-schema-v2?
+## What is `esdoc-cim-schema-v2`?
 
-esdoc-cim-schema-v2 contains a set of .py files that collectively model the CIM v2.
+`esdoc-cim-schema-v2` contains a set of `.py` files that collectively model the CIM v2.
